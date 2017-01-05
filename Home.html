@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<!-- add support for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Live Feed Sports</title>
+	<link rel="stylesheet" href="./resources/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<script type="text/javascript" src="./resources/jquery-3.1.1.min.js"></script>
 
 </head>
 <body>
 	<script src="app.js"></script>
-	<div>
-	<div id="comment_section"></div>
-	<!-- <a id="click">Click here</a> -->
-	<input id="type_comment" type="text" placeholder="Comment here..."/>
+	<!-- container-fluid fills the viewport -->
+	<div class="container">
+		<div class="alert alert-warning alert-dismissible fade in">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<strong>Warning!</strong> Have you registered on our website yet?
+		</div>
+		<h1>Comments <br><small>See what others think!</small></h1>
+
+		<div class="pre-scrollable" id="comment_section" style="max-height: 500px;"></div>
+		<!-- <pre class="pre-scrollable" id="comment_section"></pre> -->
+	
+		<!-- <a id="click">Click here</a> -->
+		<!-- <form id="target" class="form-inline row" action="Home.html"> -->
+		<input class="form-control" id="type_comment" type="text" placeholder="Comment here..."/>			<!-- <button type="submit" value="Submit" class="btn btn-primary">Submit</button> -->
+
+	</div>
 
 	<!-- sticky footer + navbar add, for navigation in website -->
 
